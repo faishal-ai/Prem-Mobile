@@ -1,0 +1,32 @@
+Soal 2: Pentingnya Memahami Dart Sebelum Menggunakan Flutter
+Memahami bahasa Dart sangat penting sebelum menggunakan Flutter karena:
+> Flutter dibangun dengan Dart: Semua kode Flutter ditulis dalam Dart, jadi pemahaman dasar sangat membantu.
+> Struktur dan sintaks Dart memengaruhi cara kita membangun UI dan logika aplikasi.
+> Fitur Dart seperti Null Safety, async/await, dan OOP sangat berperan dalam pengembangan aplikasi yang efisien dan aman.
+> Debugging dan pemecahan masalah jadi lebih mudah jika kita tahu bagaimana Dart bekerja di balik layar.
+
+Soal 3: Poin-Poin Penting dari Codelab Flutter
+> Setup awal Flutter dan Dart: Instalasi SDK, konfigurasi editor (VS Code/Android Studio).
+> Struktur dasar aplikasi Flutter: main(), MaterialApp, Scaffold, dan Widget.
+> Widget sebagai blok bangunan UI: Stateless vs Stateful Widget.
+> Hot Reload: Mempercepat proses pengembangan dan pengujian.
+> Navigasi antar halaman: Menggunakan Navigator.push() dan pop().
+> State Management dasar: Mengelola data dan interaksi pengguna.
+> Integrasi dengan API dan penggunaan async/await.
+
+Soal 4: Perbedaan Null Safety dan Late Variable
+
+Null Safety adalah fitur Dart yang mencegah nilai null muncul secara tidak sengaja, sehingga mengurangi error runtime.
+contoh:
+String name = 'Faishal'; // tidak bisa null
+String? nickname; // bisa null
+
+Late Variable digunakan untuk mendeklarasikan variabel yang akan diinisialisasi nanti, tapi tetap non-null.
+contoh:
+late String greeting;
+greeting = 'Halo, polinema!';
+print(greeting); // Output: Halo, polinema!
+
+Perbedaan utama:
+Null Safety menjaga agar variabel tidak memiliki nilai null tanpa izin.
+late memungkinkan kita menunda inisialisasi variabel, tapi tetap menjamin bahwa nilainya akan ada sebelum digunakan.
