@@ -1,0 +1,7 @@
+JAWABAN
+NO 
+2. lagkah 1 eror karena variabel counter digunakan sebelum dideklarasikan. Dalam Dart (dan banyak bahasa pemrograman lainnya), 
+setiap variabel harus dideklarasikan terlebih dahulu sebelum bisa digunakan. Kalau tidak, DartPad akan menampilkan error.
+
+3. lagkah ke tiga tidak terjadi eror dn relatif aman, Ini adalah jenis perulangan yang menjalankan blok kode terlebih dahulu, 
+lalu mengecek kondisi setelahnya. Jadi, kode akan selalu dijalankan minimal satu kali, meskipun kondisi awalnya tidak terpenuhi.
