@@ -30,7 +30,7 @@ void main(List<String> args) {
 ### **Langkah 2**
 **Output dari Langkah 1:**
 **Output:** 
-![image](img/praktikum1_lagkah2.png)
+![image](img/Praktikum_01/praktikum1_lagkah2.png)
 **Penjelasan:**
 Output print test bernilai "test2". Karena kondisi else if pertama dan kondisi if kedua keduanya bernilai benar. Akibatnya, program akan menjalankan kedua perintah print dan menghasilkan output "Test2" diikuti "Test2 again".
 
@@ -52,7 +52,7 @@ if (test) {
 
 **Output:** 
 
-![image](img/praktikum1_lagkah3.png)
+![image](img/Praktikum_01/praktikum1_lagkah3.png)
 
 ## **Praktikum 2: Menerapkan Perulangan "while" dan "do-while"**
 ### **Langkah 1**
@@ -69,7 +69,7 @@ void main(List<String> args) {
 ### **Langkah 2**
 **Output**
 
-![image](img/Prak2_Langkah1.png)
+![image](img/Praktikum_02/Prak2_Langkah1.png)
 **Penjelasan:**
 lagkah 1 eror karena variabel counter digunakan sebelum dideklarasikan. Dalam Dart (dan banyak bahasa pemrograman lainnya), 
 setiap variabel harus dideklarasikan terlebih dahulu sebelum bisa digunakan. Kalau tidak, DartPad akan menampilkan error.
@@ -86,7 +86,7 @@ void main(List<String> args) {
 ~~~
 
 **Output**
-![image](img/perbaikanpraktikum_S2.png)
+![image](img/Praktikum_02/perbaikanpraktikum_S2.png)
 
 ### **Langkah 3**
 **Kode Program:**
@@ -105,7 +105,7 @@ void main(List<String> args) {
 ~~~
 
 **Output:**
-![image](praktikum2_no3.png)
+![image](img/Praktikum_02/praktikum2_no3.png)
 
 ## **Praktikum 3: Menerapkan Perulangan "for" dan "break-continue"**
 ### **Langkah 1**
@@ -121,7 +121,7 @@ void main(List<String> args) {
 ### **Langkah 2**
 
 **Output pada kode langkah 1:**
-![image](img/praktikum3_soal2.png) #sudah saya perbaiki
+![image](img/Praktikum_03/praktikum3_soal2.png) #sudah saya perbaiki
 **Penjelasan:**
 Akan terjadi error saat program dijalankan karena variable index tidak konsisten pengetikannya, ada "Index" dan "index".  
 
@@ -160,7 +160,7 @@ void main(List<String> args) {
 ~~~
 
 **Output**
-![image](img/praktimum3_soal3.png)
+![image](img/Praktikum_03/praktimum3_soal3.png)
 
 ## Tugas Praktikum
 Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda
@@ -192,4 +192,4 @@ bool isPrima(int number) {
 ~~~
 
 **Output:**
-![alt text](img/tugas_prak.png)
+![alt text](img/tugas_praktikum/tugas_prak.png)
