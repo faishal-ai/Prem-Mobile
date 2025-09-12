@@ -1,11 +1,12 @@
-void main() {
-for (int index = 10; index < 27; index++) {
-  if (index == 21)
-    break;
-  if (index < 7 || index > 20)
-    continue;
+void main(List<String> args) {
 
-  print(index);
-}
-
+  for (int Index = 10; Index < 27; Index++) {
+    print(Index);
+   
+    if (Index == 21)
+      break;
+    else if (Index > 1 || Index < 7)
+      continue;
+    print(Index);
+  }
 }
