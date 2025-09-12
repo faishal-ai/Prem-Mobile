@@ -3,13 +3,16 @@
 **Identitas Mahasiswa:**
 
 | Nama | Kelas | Absen |
-|------|-------|-----|
+|------|-------|-------|
 | Faishal Harist Rahawan | TI-3H | 10 |
 
+---
+
 ## **Praktikum 1: Menerapkan Control Flows ("if/else")**
+
 ### **Langkah 1**
 **Kode Program:**
-~~~Dart
+~~~dart
 void main(List<String> args) {
   String test = "test2";
   if (test == "test1") {
@@ -26,35 +29,37 @@ void main(List<String> args) {
 }
 ~~~
 
-
 ### **Langkah 2**
-**Output dari Langkah 1:**
-**Output:** 
-![image](img/Praktikum_01/praktikum1_lagkah2.png)
-**Penjelasan:**
+**Output dari Langkah 1:**  
+![image](./img/Praktikum_01/praktikum1_langkah2.png)
+
+**Penjelasan:**  
 Output print test bernilai "test2". Karena kondisi else if pertama dan kondisi if kedua keduanya bernilai benar. Akibatnya, program akan menjalankan kedua perintah print dan menghasilkan output "Test2" diikuti "Test2 again".
 
 ### **Langkah 3**
 **Kode sebelum dibenahi:**
-~~~Dart
+~~~dart
 String test = "true";
 if (test) {
    print("Kebenaran");
 }
 ~~~
-**Kode yang di betulkan:**
- ~~~Dart
- String test1 = "true";
-  if (test1 == "true") {
-    print("kebenaran");
+
+**Kode yang dibetulkan:**
+~~~dart
+String test1 = "true";
+if (test1 == "true") {
+  print("kebenaran");
 }
 ~~~
 
-**Output:** 
+**Output:**  
+![image](./img/Praktikum_01/praktikum1_langkah3.png)
 
-![image](img/Praktikum_01/praktikum1_lagkah3.png)
+---
 
 ## **Praktikum 2: Menerapkan Perulangan "while" dan "do-while"**
+
 ### **Langkah 1**
 **Kode sebelum diperbaiki**
 ~~~dart
@@ -67,15 +72,14 @@ void main(List<String> args) {
 ~~~
 
 ### **Langkah 2**
-**Output**
+**Output:**  
+![image](./img/Praktikum_02/Prak2_Langkah1.png)
 
-![image](img/Praktikum_02/Prak2_Langkah1.png)
-**Penjelasan:**
-lagkah 1 eror karena variabel counter digunakan sebelum dideklarasikan. Dalam Dart (dan banyak bahasa pemrograman lainnya), 
-setiap variabel harus dideklarasikan terlebih dahulu sebelum bisa digunakan. Kalau tidak, DartPad akan menampilkan error.
+**Penjelasan:**  
+Langkah 1 error karena variabel counter digunakan sebelum dideklarasikan. Dalam Dart (dan banyak bahasa pemrograman lainnya), setiap variabel harus dideklarasikan terlebih dahulu sebelum bisa digunakan. Kalau tidak, DartPad akan menampilkan error.
 
-**Kode setelah saya benahi**
-~~~Dart
+**Kode setelah dibenahi**
+~~~dart
 void main(List<String> args) {
   int counter = 7;
   while (counter < 12) {
@@ -85,12 +89,12 @@ void main(List<String> args) {
 }
 ~~~
 
-**Output**
-![image](img/Praktikum_02/perbaikanpraktikum_S2.png)
+**Output:**  
+![image](./img/Praktikum_02/perbaikanpraktikum_S2.png)
 
 ### **Langkah 3**
 **Kode Program:**
-~~~Dart
+~~~dart
 void main(List<String> args) {
   int counter = 7;
   while (counter < 12) {
@@ -104,13 +108,16 @@ void main(List<String> args) {
 }
 ~~~
 
-**Output:**
-![image](img/Praktikum_02/praktikum2_no3.png)
+**Output:**  
+![image](./img/Praktikum_02/praktikum2_no3.png)
+
+---
 
 ## **Praktikum 3: Menerapkan Perulangan "for" dan "break-continue"**
+
 ### **Langkah 1**
 **Kode program**
-~~~Dart
+~~~dart
 void main(List<String> args) {
   for (Index = 10; index < 27; index) {
     print(Index);
@@ -119,16 +126,16 @@ void main(List<String> args) {
 ~~~
 
 ### **Langkah 2**
+**Output pada kode langkah 1:**  
+![image](./img/Praktikum_03/praktikum3_soal2.png)
 
-**Output pada kode langkah 1:**
-![image](img/Praktikum_03/praktikum3_soal2.png) #sudah saya perbaiki
-**Penjelasan:**
+**Penjelasan:**  
 Akan terjadi error saat program dijalankan karena variable index tidak konsisten pengetikannya, ada "Index" dan "index".  
 
-**Kode setelah saya perbaiki:**
-~~~Dart
+**Kode setelah diperbaiki:**
+~~~dart
 void main(List<String> args) {
-  for (int Index = 10; Index < 27; Index) {
+  for (int Index = 10; Index < 27; Index++) {
     print(Index);
   }
 }
@@ -136,20 +143,22 @@ void main(List<String> args) {
 
 ### **Langkah 3**
 **Kode program error**
-~~~Dart
+~~~dart
 If (Index == 21) break;
 Else If (index > 1 || index < 7) continue;
 print(index);
 ~~~
-**Penjelasan:** Kode error karena struktur syntax yang tidak sesuai, dan penamaan variable index tidak sesuai.
 
-**Kode program setelah saya benahi**
-~~~Dart
+**Penjelasan:**  
+Kode error karena struktur syntax yang tidak sesuai, dan penamaan variable index tidak sesuai.
+
+**Kode program setelah dibenahi**
+~~~dart
 void main(List<String> args) {
-  //Langkah 1
+  // Langkah 1
   for (int Index = 10; Index < 27; Index++) {
     print(Index);
-    //Langkah 3
+    // Langkah 3
     if (Index == 21)
       break;
     else if (Index > 1 || Index < 7)
@@ -159,14 +168,16 @@ void main(List<String> args) {
 }
 ~~~
 
-**Output**
-![image](img/Praktikum_03/praktimum3_soal3.png)
+**Output:**  
+![image](./img/Praktikum_03/praktikum3_soal3.png)
 
-## Tugas Praktikum
-Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda
+---
+
+## **Tugas Praktikum**
+Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda.
 
 **Kode Program:**
-~~~Dart
+~~~dart
 void main() {
   const String namaLengkap = 'Faishal Harist Rahmawan';
   const String nim = '2341720218';
@@ -191,5 +202,5 @@ bool isPrima(int number) {
 }
 ~~~
 
-**Output:**
-![alt text](img/tugas_praktikum/tugas_prak.png)
+**Output:**  
+![image](./img/tugas_praktikum/tugas_prak.png)
