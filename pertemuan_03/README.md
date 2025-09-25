@@ -31,7 +31,7 @@ void main(List<String> args) {
 
 ### **Langkah 2**
 **Output dari Langkah 1:**  
-![image](./img/Praktikum_01/praktikum1_langkah2.png)
+![image](./img/Praktikum_01/p1_langkah2.png)
 
 **Penjelasan:**  
 Output print test bernilai "test2". Karena kondisi else if pertama dan kondisi if kedua keduanya bernilai benar. Akibatnya, program akan menjalankan kedua perintah print dan menghasilkan output "Test2" diikuti "Test2 again".
@@ -54,7 +54,7 @@ if (test1 == "true") {
 ~~~
 
 **Output:**  
-![image](./img/Praktikum_01/praktikum1_langkah3.png)
+![image](./img/Praktikum_01/p1_langkah3.png)
 
 ---
 
