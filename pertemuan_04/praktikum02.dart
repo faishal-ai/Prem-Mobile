@@ -1,4 +1,6 @@
 void main() {
+    var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
+print(halogens);
   var names1 = <String>[];
   Set<String> names2 = {}; 
   var names3 = {}; 
@@ -12,7 +14,4 @@ void main() {
   print('Set: $names2');
   print('Map: $names3');
 
-
-//   var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
-// print(halogens);
 }

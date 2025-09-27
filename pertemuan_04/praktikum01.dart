@@ -1,24 +1,21 @@
 void main() {
-  // Langkah 1: Buat list final dengan panjang 5 dan nilai default null
-  final List<dynamic> list = List.filled(5, null);
+  // ===== Langkah 1 =====
+  var list = [1, 2, 3];
+  assert(list.length == 3);
+  assert(list[1] == 2);
+  print("=== Langkah 1 ===");
+  print(list.length); // 3
+  print(list[1]);     // 2
 
-  // Isi nama dan NIM
-  list[1] = 'Faishal Haist Rahmawan'; 
-  list[2] = '2341720218'; 
+  list[1] = 1;
+  assert(list[1] == 1);
+  print(list[1]);     // 1
 
-  // Cetak
-  print(list.length); 
-  print(list[1]);     
-  print(list[2]);     
+  // ===== Langkah 3 =====
+  final List<String?> listFinal = List.filled(5, null, growable: false);
+  listFinal[1] = "Faishal Harist Rahmawan";
+  listFinal[2] = "2341720218";
+
+  print("\n=== Langkah 3 ===");
+  print(listFinal);
 }
-// void main() {
-// var list = [1, 2, 3];
-// assert(list.length == 3);
-// assert(list[1] == 2);
-// print(list.length);
-// print(list[1]);
-
-// list[1] = 1;
-// assert(list[1] == 1);
-// print(list[1]);
-// }
