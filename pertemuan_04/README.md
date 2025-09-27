@@ -230,3 +230,145 @@ Record campuran:
 - Akses field bernama pakai .a, .b.
 
  Intinya: kode ini menunjukkan cara membuat, menukar, dan mengakses record (baik posisi maupun bernama) di Dart.
+
+## **Tugas Praktikum**
+### 2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+**Jawab:** Dalam bahasa Dart, sebuah function adalah blok kode yang dapat digunakan kembali untuk melakukan tugas tertentu. Fungsi diberi nama, bisa menerima masukan data melalui parameter, dan dapat mengembalikan sebuah nilai sebagai hasil eksekusinya. Tujuan utama penggunaan fungsi adalah untuk memecah program besar menjadi bagian-bagian yang lebih kecil dan terkelola, menghindari penulisan kode yang berulang, dan membuat alur program lebih mudah dibaca.
+
+### 3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+**Jawab:**
+- **Positional Parameter (Wajib)** Parameter yang harus diisi sesuai urutan.
+
+~~~Dart
+//Parameter Posisional (Positional Parameters)
+void greet({required String name, int? age}) {
+  print("Halo $name, umurmu ${age ?? 'tidak diketahui'}");
+}
+
+void main() {
+  greet(name: "Faishal", age: 20);
+}
+~~~
+
+**Output:**
+
+![img](./img/Tugas/tp3.png)
+
+- **Optional Positional Parameter** Ditulis dengan [ ]. Parameternya boleh tidak diisi, dan bisa diberi nilai default.
+
+~~~Dart
+void salam(String nama, [String? pesan]) {
+  print("Halo $nama");
+  if (pesan != null) {
+    print("Pesan: $pesan");
+  }
+}
+
+void main() {
+  salam("Faishal");                 // tanpa pesan
+  salam("Faishal", "Selamat Pagi"); // dengan pesan
+}
+~~~
+
+**Output:**
+
+![img](./img/Tugas/tp32.png)
+
+
+### 4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+**Jawab:**
+Di Dart, function diperlakukan seperti data biasa (object).
+Artinya:
+- Bisa disimpan ke variabel.
+- Bisa dikirim sebagai parameter ke function lain.
+- Bisa dikembalikan (return) dari function lain.
+- Inilah yang disebut first-class objects → fungsi diperlakukan setara dengan tipe data lain (int, String, List, dsb).
+
+**Contoh Penerapan:**
+~~~Dart
+void sapa(String nama) {
+  print("Halo, $nama!");
+}
+
+void main() {
+  // simpan function ke variabel
+  var f = sapa;
+  f("Faishal"); // memanggil lewat variabel
+}
+~~~
+
+**Output:**
+
+![img](./img/Tugas/tp32.png)
+
+- Function sapa disimpan ke variabel f dan bisa dipanggil seperti biasa.
+
+### 5. Apa itu Anonymous Functions? 
+**Jawab:** Anonymous function adalah sebuah fungsi yang tidak memiliki nama. Fungsi ini sering disebut juga sebagai lambda atau closure. Kegunaan utamanya adalah untuk membuat fungsi "sekali pakai" yang ringkas, biasanya untuk diberikan sebagai argumen ke fungsi lain (seperti dalam metode forEach atau map pada sebuah List). Karena tidak memiliki nama, fungsi ini didefinisikan langsung di tempat ia akan digunakan, membuat kode lebih pendek dan fokus pada tujuannya.
+
+**Contoh Penerapan:**
+~~~Dart
+void main() {
+  var angka = [1, 2, 3, 4];
+
+  // Anonymous function di dalam forEach
+  angka.forEach((n) {
+    print("Angka: $n");
+  });
+}
+~~~
+
+**Output:**
+
+![img](img/Tugas/tp5.png)
+
+### 6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+**Jawab:** 
+- **Lexical scope** adalah aturan di mana jangkauan (scope) sebuah variabel ditentukan oleh lokasinya di dalam kode. Artinya, sebuah fungsi yang berada di dalam fungsi lain (inner function) dapat mengakses variabel yang ada di fungsi luarnya (parent function). Sederhananya, ini adalah tentang "di mana" sebuah variabel bisa terlihat dan diakses berdasarkan struktur blok kode {}.
+
+- **Lexical closure**, di sisi lain, adalah sebuah fungsi yang "mengingat" variabel-variabel dari lingkungan tempat ia dibuat (lexical scope-nya), bahkan ketika fungsi tersebut dieksekusi di luar lingkungannya. Sebuah closure adalah objek fungsi yang "menutup" atau membawa serta variabel-variabel dari scope induknya.
+
+**Contoh Penerapan:**
+~~~Dart
+Function buatCounter() {
+  var hitung = 0;
+
+  // fungsi di dalam mengikat (capture) variabel 'hitung'
+  return () {
+    hitung++;
+    return hitung;
+  };
+}
+
+void main() {
+  var counter1 = buatCounter();
+  var counter2 = buatCounter();
+
+  print(counter1()); 
+  print(counter1()); 
+  print(counter2()); 
+}
+~~~
+
+**Output:**
+
+![img](img/Tugas/tp6.png)
+
+### 7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+**Jawab:**
+~~~Dart
+// Fungsi mengembalikan 2 nilai dalam bentuk Record
+(int, String) getData() {
+  return (10, "Halo");
+}
+
+void main() {
+  var (angka, teks) = getData(); // destructuring
+  print("Angka: $angka");
+  print("Teks: $teks");
+}
+~~~
+
+**Output:**
+
+![img](img/Tugas/tp7.png)
