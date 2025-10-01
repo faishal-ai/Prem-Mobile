@@ -47,7 +47,7 @@ class MyImageWidget extends StatelessWidget {
 
 **Output:**
 
-![img](img/p4.jpg)
+![img](aset/p4.jpg)
 
 ## **Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino**
 ### **Langkah 3: Scaffold Widget**
@@ -307,14 +307,3 @@ class _MyHomePageState extends State<MyHomePage> {
 - lalu klik ok untuk simpan
 ![img](aset/p5r4.1.png)
 
-
-## Codelabs: Your First Flutter App.
-### **Button**
-
-### **Prettier**
-
-### **Functionality**
-
-### **Navigation Rail**
-
-### **Add New Page**
