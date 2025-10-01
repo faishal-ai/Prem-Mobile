@@ -47,7 +47,7 @@ class MyImageWidget extends StatelessWidget {
 
 **Output:**
 
-![img](aset/p4.jpg)
+![img](aset/p4.png)
 
 ## **Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino**
 ### **Langkah 3: Scaffold Widget**
