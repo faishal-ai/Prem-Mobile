@@ -125,4 +125,4 @@ class MyApp extends StatelessWidget {
 ~~~
 ### **Output Praktikum**
 
-![Prak1-4](images/p1-4.png)
+![Prak1-4](images/p1-4.png) 
