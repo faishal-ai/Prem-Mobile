@@ -3,10 +3,11 @@
 **Identitas Mahasiswa:**
 
 | Nama | Kelas | Absen |
-|------|-------|-----|
+|------|-------|-------|
 | Faishal Harist Rahmawan | TI-3H | 10 |
  
 ## **Praktikum Menerapkan Plugin di Project Flutter**
+
 **Kode Program: main.dart**
 ~~~Dart
 import 'package:flutter/material.dart';
@@ -52,10 +53,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // Container kuning: gunakan width lebih besar agar teks jelas
+            // Container kuning
             Container(
               color: Colors.yellowAccent,
-              width: 220, // ubah sesuai kebutuhan layar
+              width: 220,
               padding: const EdgeInsets.all(8),
               child: const RedTextWidget(
                 text: 'You have pushed the button this many times:',
@@ -64,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             const SizedBox(height: 12),
 
-            // Container hijau: contoh Text biasa
+            // Container hijau
             Container(
               color: Colors.greenAccent,
               width: 220,
@@ -78,8 +79,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium
-                  ?? const TextStyle(fontSize: 36),
+              style: Theme.of(context).textTheme.headlineMedium ??
+                  const TextStyle(fontSize: 36),
             ),
           ],
         ),
@@ -92,7 +93,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
 ~~~
 
 **Kode Program: red_text_widget.dart**
@@ -114,9 +114,7 @@ class RedTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Pastikan AutoSizeText memiliki batas lebar (SizedBox/Container)
     return SizedBox(
-      // Agar fleksibel, tidak memaksa ukuran terlalu kecil; parent bisa override lebar
       width: double.infinity,
       child: AutoSizeText(
         text,
@@ -127,8 +125,10 @@ class RedTextWidget extends StatelessWidget {
     );
   }
 }
+~~~
 
-**Output:**
+---
+
+## **Output:**
 
 ![Output Aplikasi](images/r1.png)
-
